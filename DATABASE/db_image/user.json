@@ -1,0 +1,114 @@
+[
+  {
+    "user_id": 1,
+    "full_name": "Truong Lap Phan",
+    "email": "phan@gmail.com",
+    "password": "12345566",
+    "age": 23,
+    "avatar": "phan"
+  },
+  {
+    "user_id": 2,
+    "full_name": "Le Thanh Tan",
+    "email": "tan@gmail.com",
+    "password": "123456",
+    "age": 24,
+    "avatar": "tan"
+  },
+  {
+    "user_id": 3,
+    "full_name": "Tran Nhat Nam",
+    "email": "nam@gmail.com",
+    "password": "54321",
+    "age": 25,
+    "avatar": "nam"
+  },
+  {
+    "user_id": 4,
+    "full_name": "Truong Cong Hieu",
+    "email": "hieu@gmail.com",
+    "password": "234589",
+    "age": 25,
+    "avatar": "hieu"
+  },
+  {
+    "user_id": 5,
+    "full_name": "Bui Van Du",
+    "email": "du@gmail.com",
+    "password": "2223334",
+    "age": 25,
+    "avatar": "du"
+  },
+  {
+    "user_id": 6,
+    "full_name": "Dinh Cong Toan",
+    "email": "toan@gmail.com",
+    "password": "75839",
+    "age": 25,
+    "avatar": "toan"
+  },
+  {
+    "user_id": 7,
+    "full_name": "Le Van Son",
+    "email": "son@gmail.com",
+    "password": "783784785",
+    "age": 25,
+    "avatar": "son"
+  },
+  {
+    "user_id": 8,
+    "full_name": "Dang Ngoc Qui",
+    "email": "qui@gmail.com",
+    "password": "2234242",
+    "age": 25,
+    "avatar": "qui"
+  },
+  {
+    "user_id": 9,
+    "full_name": "Duong Van Thanh",
+    "email": "thanh@gmail.com",
+    "password": "37596",
+    "age": 25,
+    "avatar": "thanh"
+  },
+  {
+    "user_id": 10,
+    "full_name": "Viet Hieu",
+    "email": "balechung93@gmail.com",
+    "password": "123",
+    "age": 25,
+    "avatar": "mymy"
+  },
+  {
+    "user_id": 11,
+    "full_name": "Bùi Thị Trà My",
+    "email": "conga@gmail.com",
+    "password": "123456789",
+    "age": 25,
+    "avatar": "mymy"
+  },
+  {
+    "user_id": 12,
+    "full_name": "Bui Tien Quang",
+    "email": "quang@gmail.com",
+    "password": "$2b$10$vgUjA2wvrzs07BkW5u51u.59XNCGdQXrS/7e498DtpwbTUB8GKHhK",
+    "age": null,
+    "avatar": null
+  },
+  {
+    "user_id": 13,
+    "full_name": "Chung",
+    "email": "huu@gmail.com",
+    "password": "$2b$10$APxmHcthxLrN0py90wFcku3d.aHcL3LthTRF7DOnXpjIi1eDXfK6O",
+    "age": null,
+    "avatar": null
+  },
+  {
+    "user_id": 14,
+    "full_name": "chung luong huu",
+    "email": "luong@gmail.com",
+    "password": "$2b$10$ssN0mE4FBPCMXNWjq/nwy.PNYYv.8.uTlqa5TGjE.XTgZHWbxEJBu",
+    "age": null,
+    "avatar": null
+  }
+]

@@ -1,0 +1,100 @@
+[
+  {
+    "cmt_id": 1,
+    "cmt": "xe quá đẹp",
+    "date_like": "2023-05-29 20:32:00",
+    "user_id": 1,
+    "image_id": 9
+  },
+  {
+    "cmt_id": 2,
+    "cmt": "xe quá xịn sò",
+    "date_like": "2023-05-30 20:45:00",
+    "user_id": 3,
+    "image_id": 7
+  },
+  {
+    "cmt_id": 3,
+    "cmt": "thị trấn du lịch",
+    "date_like": "2023-05-30 20:45:00",
+    "user_id": 1,
+    "image_id": 11
+  },
+  {
+    "cmt_id": 4,
+    "cmt": "giá quá đắt",
+    "date_like": null,
+    "user_id": 3,
+    "image_id": 7
+  },
+  {
+    "cmt_id": 5,
+    "cmt": "bờm sư tử",
+    "date_like": null,
+    "user_id": 14,
+    "image_id": 4
+  },
+  {
+    "cmt_id": 6,
+    "cmt": "uy dũng",
+    "date_like": null,
+    "user_id": 2,
+    "image_id": 4
+  },
+  {
+    "cmt_id": 133,
+    "cmt": "tốc đọ",
+    "date_like": null,
+    "user_id": 14,
+    "image_id": 7
+  },
+  {
+    "cmt_id": 134,
+    "cmt": "xe quá xinh",
+    "date_like": null,
+    "user_id": 14,
+    "image_id": 7
+  },
+  {
+    "cmt_id": 135,
+    "cmt": "sư tư châu phi",
+    "date_like": null,
+    "user_id": 14,
+    "image_id": 4
+  },
+  {
+    "cmt_id": 136,
+    "cmt": "ngầu",
+    "date_like": null,
+    "user_id": 14,
+    "image_id": 4
+  },
+  {
+    "cmt_id": 137,
+    "cmt": "quá cute",
+    "date_like": null,
+    "user_id": 14,
+    "image_id": 3
+  },
+  {
+    "cmt_id": 138,
+    "cmt": "sẽ quay trở lại",
+    "date_like": null,
+    "user_id": 14,
+    "image_id": 11
+  },
+  {
+    "cmt_id": 139,
+    "cmt": "quá trời nhà nghỉ",
+    "date_like": null,
+    "user_id": 14,
+    "image_id": 11
+  },
+  {
+    "cmt_id": 140,
+    "cmt": "con mèo lớn",
+    "date_like": null,
+    "user_id": 14,
+    "image_id": 3
+  }
+]

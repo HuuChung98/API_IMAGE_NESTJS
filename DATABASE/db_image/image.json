@@ -1,0 +1,79 @@
+[
+  {
+    "image_id": 3,
+    "image_name": "hổ",
+    "link": "https://cdn.britannica.com/40/75640-050-F894DD85/tiger-Siberian.jpg",
+    "description": "động vật",
+    "user_id": 1
+  },
+  {
+    "image_id": 4,
+    "image_name": "sư tử",
+    "link": "https://a-z-animals.com/media/2022/09/iStock-492611032.jpg",
+    "description": "động vật",
+    "user_id": 5
+  },
+  {
+    "image_id": 5,
+    "image_name": "sói",
+    "link": "https://sieupet.com/sites/default/files/wolf-hybrid_dog8.jpg",
+    "description": "động vật",
+    "user_id": 6
+  },
+  {
+    "image_id": 6,
+    "image_name": "Lamborghini Aventador",
+    "link": "https://upload.wikimedia.org/wikipedia/commons/9/97/Lamborghini_Aventador_LP700-4_Orange.jpg",
+    "description": "xe",
+    "user_id": 3
+  },
+  {
+    "image_id": 7,
+    "image_name": "Bungatti chiron",
+    "link": "https://www.topgear.com/sites/default/files/2021/11/_Z3A7768.jpg",
+    "description": "xe",
+    "user_id": 2
+  },
+  {
+    "image_id": 9,
+    "image_name": "Yamaha R1",
+    "link": "https://xethitruong.vn/data/data/phuongthao/2(60).jpg",
+    "description": "motor",
+    "user_id": 9
+  },
+  {
+    "image_id": 10,
+    "image_name": "Kawasaki Ninja 400",
+    "link": "https://cdp.azureedge.net/products/USA/KA/2021/MC/SPORT/NINJA_400/50/PASSION_RED/2000000006.jpg",
+    "description": "motor",
+    "user_id": 1
+  },
+  {
+    "image_id": 11,
+    "image_name": "Thị trấn Đồng Văn",
+    "link": "https://disantrangan.vn/wp-content/uploads/2021/10/pho_co_dong_van_ha_giang_08.jpg",
+    "description": "Hà Giang",
+    "user_id": 13
+  },
+  {
+    "image_id": 108,
+    "image_name": "Yamaha R1",
+    "link": "https://xethitruong.vn/data/data/phuongthao/2(60).jpg",
+    "description": "motor",
+    "user_id": 14
+  },
+  {
+    "image_id": 109,
+    "image_name": "Kawasaki Ninja 400",
+    "link": "https://cdp.azureedge.net/products/USA/KA/2021/MC/SPORT/NINJA_400/50/PASSION_RED/2000000006.jpg",
+    "description": "motor",
+    "user_id": 14
+  },
+  {
+    "image_id": 110,
+    "image_name": "Thị trấn Đồng Văn",
+    "link": "https://disantrangan.vn/wp-content/uploads/2021/10/pho_co_dong_van_ha_giang_08.jpg",
+    "description": "Hà Giang",
+    "user_id": 14
+  }
+]
