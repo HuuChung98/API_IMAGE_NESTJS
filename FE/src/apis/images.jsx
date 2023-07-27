@@ -48,11 +48,6 @@ export const editUser = ({ values, user_id }) => {
     console.log("Line 49", values);
     console.log("Line 50 ", user_id);
 
-    // const formData = new FormData();
-    // for (let key in values) {
-    //     formData.append(key, values[key])
-    // }
-
     return axiosClient.patch(`user/update-user/${user_id}`, values);
 }
 

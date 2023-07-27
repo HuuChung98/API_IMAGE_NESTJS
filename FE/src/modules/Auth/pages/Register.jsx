@@ -32,11 +32,21 @@ const Register = () => {
   const navigate = useNavigate();
   const onSubmit = (values) => {
     // console.log(values);
-    dispatch(registerAction(values)).then(() => {
-      // sau khi xu ly thanh cong => chuyen ve trang dang nhap
-      navigate("/login");
-    });
+    //   dispatch(registerAction(values)).then(() => {
+    //     // sau khi xu ly thanh cong => chuyen ve trang dang nhap
+    //     navigate("/login");
+
+    //   });
+    // }
+
+    dispatch(registerAction(values));
   }
+
+  if (!error) {
+    console.log(error);
+    navigate("/login");
+  }
+
 
   return (
     <div className='text-center'>
@@ -45,23 +55,24 @@ const Register = () => {
         <div>
           <label htmlFor="">Họ tên</label>
           <input type="text" {...register("full_name")} />
-          { errors.full_name && <span> {errors.full_name.message}</span>}
+          {errors.full_name && <span> {errors.full_name.message}</span>}
         </div>
         <div>
           <label htmlFor="">email</label>
           <input type="text" {...register("email")} />
-          { errors.email && <span> {errors.email.message}</span>}
+          {errors.email && <span> {errors.email.message}</span>}
         </div>
         <div>
           <label htmlFor="">Mật khẩu</label>
           <input type="password" {...register("password")} />
-          { errors.password && <span> {errors.password.message}</span>}
+          {errors.password && <span> {errors.password.message}</span>}
         </div>
         <div>
           <label htmlFor="">Tuổi</label>
           <input type="text" {...register("age")} />
         </div>
         <button className='btn btn-secondary' > Đăng kí </button>
+        {error && <p>{error}</p>}
       </form>
     </div>
   )

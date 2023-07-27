@@ -1,5 +1,6 @@
 import { HttpException, Injectable } from '@nestjs/common';
 import { CreateUserDto } from './dto/create-user.dto';
+import * as bcrypt from 'bcrypt';
 import { UpdateUserDto } from './dto/update-user.dto';
 import { PrismaClient } from '@prisma/client';
 
@@ -142,14 +143,14 @@ export class UserService {
       let { destination, filename } = file;
       let uploadImage = {
         image_name: filename,
-        link: destination,
+        link: `http://localhost:8080/public/img/${filename}`,
         user_id: userId
       }
       await this.prisma.image.create({ data: uploadImage });
       // throw new HttpException({ content: "đã đăng hình thành công" })
       return "Upload ảnh thành công";
     } catch (error) {
-      throw new HttpException(error.response.content, error.status);
+      return "Upload ảnh không thành công";
     }
   }
 
@@ -158,23 +159,28 @@ export class UserService {
       let { full_name, email, password, age, avatar } = values;
       console.log(values);
 
-      let updateUser = {
-        full_name,
-        email,
-        password,
-        age: Number(age),
-        avatar
+      let checkUser = await this.prisma.user.findFirst({ where: { email: email } });
+
+      if (!checkUser) {
+        let updateUser = {
+          full_name,
+          email,
+          password: await bcrypt.hash(password, 10),
+          age: Number(age),
+          avatar
+        }
+
+        await this.prisma.user.update({ data: updateUser, where: { user_id: userId } });
+
+        // return "Cập nhật thành công";
+        return updateUser;
+      } else {
+        throw new HttpException({content: "Email đã tồn tại", code: 404}, 404);
       }
 
-      let update = await this.prisma.user.update({ data: updateUser, where: { user_id: userId } });
-
-      console.log(update);
-
-      return "Cập nhật thành công";
-
     } catch (error) {
-      // 
-      console.log(error);
+      // throw new HttpException("Lỗi BE", 500);
+      throw new HttpException(error.response.content, error.status);
     }
 
   }
