@@ -1,5 +1,4 @@
 // Dinh nghia cac function goi API
-import axios from "axios";
 import axiosClient from "./axiosClient";
 import { lightGreen } from "@mui/material/colors";
 
@@ -28,8 +27,8 @@ export const getImageSaved = (user_id) => {
     return axiosClient.get(`/user/get-user/saved/${user_id}`);
 }
 
-export const addImage = ({payload, user_id}) => {
-    console.log(" Line 32 ",payload);
+export const addImage = ({ payload, user_id }) => {
+    console.log(" Line 32 ", payload);
     // const userId = payload.user_id;
     console.log(user_id);
     // chú ý: khi thêm/ cập nhật dữ liệu có những dữ liệu như file
@@ -37,15 +36,15 @@ export const addImage = ({payload, user_id}) => {
     const formData = new FormData();
     // formData.append(key, payload[key])
     for (let key in payload) {
-        formData.append(key, payload[key]) 
+        formData.append(key, payload[key])
     }
-    
+
     return axiosClient.post(`user/upload-image/${user_id}`, formData);
 
     // return axiosClient.post(`user/upload-image/11`, formData);
 }
 
-export const editUser = ({ values ,user_id }) => {
+export const editUser = ({ values, user_id }) => {
     console.log("Line 49", values);
     console.log("Line 50 ", user_id);
 
@@ -64,14 +63,14 @@ export const checkImageSaved = (image_id) => {
     return axiosClient.get(`user/get-image/saved/${image_id}`);
 }
 
-export const postCmt =  ({payload, user_id}) => {
-    
-    console.log("Line 69", user_id ,payload);
+export const postCmt = ({ payload, user_id }) => {
+
+    console.log("Line 69", user_id, payload);
     // const formData = new FormData();
     // // formData.append(key, payload[key])
     // for (let key in payload) {
     //     formData.append(key, payload[key]) 
     // }
-    
-    return axiosClient.post(`user/get-image/give-cmt/${user_id}`, payload );
+
+    return axiosClient.post(`user/get-image/give-cmt/${user_id}`, payload);
 }

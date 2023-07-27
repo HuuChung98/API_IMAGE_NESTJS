@@ -27,12 +27,13 @@ export class AuthService {
         // Kiểm tra mật khẩu có đúng hay không. Đúng => login thành công
         if (bcrypt.compareSync(password, checkUser.password)) {
 
-          let accessToken = this.jwtService.signAsync({ data: "data" }, { secret: this.configService.get("KEY"), expiresIn: "4d" });
-
-          return checkUser;
-          // console.log(accessToken);
-
+          // let accessToken = this.jwtService.signAsync({ data: "data" }, { secret: this.configService.get("KEY"), expiresIn: "4d" });
+          let accessToken = await this.jwtService.signAsync({ data: "data" }, { secret: "CHUNG", expiresIn: "10m" });
+                    
+          return {...checkUser, token: accessToken};
+  
         }
+        
         else {
           // return "Mật khẩu không đúng";  // sai
           throw new HttpException({ content: "tài khoản hoặc mật khẩu không đúng" }, 404);

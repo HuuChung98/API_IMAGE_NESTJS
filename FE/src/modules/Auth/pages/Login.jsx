@@ -35,7 +35,7 @@ const Login = () => {
   console.log(user);
   // localStorage.setItem("user", JSON.stringify(user));
   if(user) {  
-    return < Navigate to="/image/"/>
+    return < Navigate to="/"/>
   }
 
 

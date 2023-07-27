@@ -4,7 +4,9 @@ import store from '../store';
 
 const axiosClient = axios.create({
     //set up url mac dinh
+    // baseURL: "http://128.199.223.79:8080/"
     baseURL: "http://localhost:8080/"
+
     // set up token dung de log in user
     // headers: {
     //     // toke duoc tao ra luc dang nhap
@@ -32,8 +34,8 @@ axiosClient.interceptors.request.use(
 
         // lấy accessToken từ BE và gán cho Authorization của req headers 
         if (user) {
-            const { accessToken } = user;
-            config.headers.Authorization = `Bearer ${accessToken}`;
+            const { token } = user;
+            config.headers.Authorization = `Bearer ${token}`;
         }
         return config;
     }

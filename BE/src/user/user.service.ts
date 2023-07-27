@@ -31,9 +31,11 @@ export class UserService {
         include: {
           user: true,
           // comment: true  // lấy cmt của user nếu có
-          comment: { include: {
-            user: true
-          }}  // lấy cmt của user nếu có
+          comment: {
+            include: {
+              user: true
+            }
+          }  // lấy cmt của user nếu có
 
         },
         where: {
@@ -107,7 +109,7 @@ export class UserService {
 
   }
 
-  // xử lý lấy danh sách đã tạo theo userId
+  // xử lý lấy danh sách ảnh đã tạo theo userId
   async getImageCreate(userId: number) {
     try {
       let imageCreateByUser = await this.prisma.image.findMany({
@@ -119,9 +121,9 @@ export class UserService {
         }
       });
       return imageCreateByUser;
-      
+
     } catch (error) {
-      
+      return error;
     }
   }
 
